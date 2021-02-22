@@ -372,7 +372,7 @@ a {
 }
 
 a:hover {
-  color: #707683;
+  color: #5D16D5;
 }
 
 img {
@@ -481,12 +481,18 @@ button {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #C7D2E9;
+  border: 1px solid #C7D2E9;
   border-radius: 4px;
+  text-decoration: none;
+}
+
+.main-header__lang-button--active {
+  background-color: #C7D2E9;
 }
 
 .main-header__lang-button:hover {
-  color: #565a64;
+  background-color: #C7D2E9;
+  color: #000000;
 }
 
 .main-header__lang-button:last-child {
@@ -510,6 +516,7 @@ button {
 .main-nav {
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 
 .main-nav__link {
@@ -531,6 +538,10 @@ button {
   margin-bottom: 50px;
 }
 
+.frame--excursions p {
+  max-width: 700px;
+}
+
 .frame__title {
   margin-top: 0;
   margin-bottom: 40px;
@@ -549,17 +560,20 @@ button {
   width: 160px;
   padding-top: 17px;
   padding-bottom: 15px;
-  border: none;
+  margin-right: 24px;
+  border: 1px solid #C7D2E9;
   background-color: transparent;
-  text-decoration: underline;
   font-size: 22px;
   line-height: 26px;
+  border-radius: 8px;
+}
+
+.tabs__list-button:hover {
+  background-color: #C7D2E9;
 }
 
 .tabs__list-button--active {
   background-color: #C7D2E9;
-  border-radius: 8px;
-  text-decoration: none;
 }
 
 .museum-cards {
